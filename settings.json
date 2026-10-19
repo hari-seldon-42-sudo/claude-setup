@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "model": "opus[1m]",
+  "enabledPlugins": {
+    "humanizer@humanizer": true,
+    "superpowers@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "humanizer": {
+      "source": {
+        "source": "github",
+        "repo": "blader/humanizer"
+      }
+    },
+    "raghuram-skills": {
+      "source": {
+        "source": "github",
+        "repo": "raghuramsirigiri/claude-chart-dashboard"
+      }
+    }
+  },
+  "skipAutoPermissionPrompt": true
+}

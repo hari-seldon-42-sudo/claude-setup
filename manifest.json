@@ -1,0 +1,83 @@
+{
+  "description": "Claude Code environment manifest — plugins, skills, marketplaces, and settings",
+  "generated": "2026-10-18",
+  "plugins": [
+    {
+      "id": "superpowers@claude-plugins-official",
+      "name": "superpowers",
+      "marketplace": "claude-plugins-official",
+      "source": {
+        "type": "github",
+        "repo": "anthropics/claude-plugins-official"
+      },
+      "version": "5.1.0",
+      "enabled": true
+    },
+    {
+      "id": "humanizer@humanizer",
+      "name": "humanizer",
+      "marketplace": "humanizer",
+      "source": {
+        "type": "github",
+        "repo": "blader/humanizer"
+      },
+      "version": "3.1.0",
+      "enabled": true
+    },
+    {
+      "id": "milhouse@local-desktop-app-uploads",
+      "name": "milhouse",
+      "marketplace": "local-desktop-app-uploads",
+      "source": {
+        "type": "local",
+        "note": "Desktop app upload plugin — auto-installed by Claude desktop app"
+      },
+      "version": "1.0.11",
+      "enabled": false
+    },
+    {
+      "id": "fenlow@local-desktop-app-uploads",
+      "name": "fenlow",
+      "marketplace": "local-desktop-app-uploads",
+      "source": {
+        "type": "local",
+        "note": "Desktop app upload plugin — auto-installed by Claude desktop app"
+      },
+      "version": "1.0.11",
+      "enabled": false
+    }
+  ],
+  "extraMarketplaces": [
+    {
+      "name": "humanizer",
+      "source": {
+        "type": "github",
+        "repo": "blader/humanizer"
+      }
+    },
+    {
+      "name": "raghuram-skills",
+      "source": {
+        "type": "github",
+        "repo": "raghuramsirigiri/claude-chart-dashboard"
+      }
+    }
+  ],
+  "projectSkills": [
+    {
+      "name": "diagram-design",
+      "source": "anthropics/claude-plugins-official (skills subfolder)",
+      "path": "skills/diagram-design/"
+    },
+    {
+      "name": "humanizer",
+      "source": "blader/humanizer",
+      "path": "skills/humanizer/"
+    }
+  ],
+  "settings": {
+    "model": "opus[1m]",
+    "permissionMode": "auto",
+    "skipAutoPermissionPrompt": true
+  }
+}
